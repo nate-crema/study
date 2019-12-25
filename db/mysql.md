@@ -103,7 +103,7 @@ table 이름 변경
 
 데이터 변경
 
-	mysql> update [table_name] set [colum_name]=‘[change_contents]’ where [target_colum_name] = ‘[target_colum_data]’;
+	mysql> update [table_name] set [colum_name]=‘[change_contents]’ where [base_colum_name] = ‘[base_colum_data]’;
 
 table 안의 내용 모두 지우기 (table 초기화) (복구가능)
 
