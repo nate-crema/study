@@ -82,9 +82,14 @@ table 데이터 보기 (모두)
 
 table 데이터 검색
 
-	mysql> select [find_field_name(=column)] from [table_name] where [search_rule];
+	mysql> select [find_field_name(=column)] from [table_name] where [column_1]=[search_column_data_1];
+	
+	// 만약 조건이 2개 이상일 경우
+	
+	mysql> select [find_field_name(=column)] from [table_name] where [column_1]=[search_column_data_1] and [column_2]=[search_column_data_2]...
 
 table 구성보기 (컬럼 보기)
+
 	mysql> Desc [table_name];
 
 
