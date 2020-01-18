@@ -82,9 +82,14 @@ table 데이터 보기 (모두)
 
 table 데이터 검색
 
-	mysql> select [find_field_name(=column)] from [table_name] where [search_rule];
+	mysql> select [find_field_name(=column)] from [table_name] where [column_1]=[search_column_data_1];
+	
+	// 만약 조건이 2개 이상일 경우
+	
+	mysql> select [find_field_name(=column)] from [table_name] where [column_1]=[search_column_data_1] and [column_2]=[search_column_data_2]...
 
 table 구성보기 (컬럼 보기)
+
 	mysql> Desc [table_name];
 
 
@@ -98,7 +103,7 @@ table 이름 변경
 
 데이터 변경
 
-	mysql> update [table_name] set [colum_name]=‘[change_contents]’ where [target_colum_name] = ‘[target_colum_data]’;
+	mysql> update [table_name] set [colum_name]=‘[change_contents]’ where [base_colum_name] = ‘[base_colum_data]’;
 
 table 안의 내용 모두 지우기 (table 초기화) (복구가능)
 
